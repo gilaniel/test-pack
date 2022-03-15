@@ -1,6 +1,6 @@
 {
   "name": "kedoo-ts-pack",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "test ts",
   "main": "lib/cjs/components/index.js",
   "module": "lib/esm/components/index.js",
