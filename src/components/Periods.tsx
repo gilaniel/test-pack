@@ -45,7 +45,6 @@ interface PeriodsProps {
 const Periods: React.FC<PeriodsProps> = ({
   onPeriodChange,
   period,
-  filters = {},
   page,
   maxDate,
   custom = false,
