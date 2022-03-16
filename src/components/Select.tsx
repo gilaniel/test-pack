@@ -262,11 +262,12 @@ const Select: React.FC<SelectProps> = ({
   const setDropdownPosition = () => {
     let inputRect = inputRef.getBoundingClientRect();
     let header: any = document.querySelector(".header");
+    let headerHeight = header ? header.offsetHeight : 0;
     let menuHeight = menuRef.offsetHeight;
 
     let selectItem: any = document.querySelectorAll(".select__item");
 
-    let topSpace = inputRect.top - header.offsetHeight;
+    let topSpace = inputRect.top - headerHeight;
     let bottomSpace = window.innerHeight - (inputRect.top + inputRect.height);
     let spaceHeight = bottomSpace > topSpace ? bottomSpace : topSpace;
 
