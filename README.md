@@ -1,1 +1,1 @@
-# test-pack
+# kedoo-ts-pack
