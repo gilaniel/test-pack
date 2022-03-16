@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Select from "./Select";
 import moment from "moment";
 
-import { useHelpers } from "@hooks/helpers";
+import { useHelpers } from "../hooks/helpers";
 
 import DatePicker, { registerLocale } from "react-datepicker";
 import { enGB } from "date-fns/esm/locale";

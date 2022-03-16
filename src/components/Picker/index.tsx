@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PICKER_FORMAT } from "@components/Periods";
+import { PICKER_FORMAT } from "../Periods";
 
 import ReactDatePicker from "react-datepicker";
 

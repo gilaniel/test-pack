@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Caret } from "@components/Icons";
+import { Caret } from "./Icons";
 import classNames from "classnames";
 
 interface DropDownProps {

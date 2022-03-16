@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import classNames from "classnames";
-import { Caret } from "@components/Icons";
+import { Caret } from "./Icons";
 
 // window.innerHeight - (elOffsetRect.top + bounding.height + offset);
 // idealYPos = idealYPos - dropdownBRect.height + (this.options.coverTrigger ? triggerBRect.height : 0);
