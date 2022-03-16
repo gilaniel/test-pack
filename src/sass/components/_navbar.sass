@@ -1,0 +1,126 @@
+.navbar
+  position: fixed
+  top: 70px
+  bottom: -50px
+  left: 0
+  width: 60px
+  overflow: hidden
+  background: $main-color
+  padding: 0
+  transition: width .3s
+  z-index: 10
+  box-shadow: 4px 0 24px -8px rgba(52,58,64,0.75)
+
+  &.open
+    width: 270px
+
+    span
+      display: inline-block
+      margin-left: 10px
+
+    .navbar-item
+      justify-content: start
+      padding: 13px 15px
+
+      &.sub-link
+        padding-left: 45px
+
+    .navbar-item__sandwich
+      padding: 20px 15px
+
+  span
+    display: none
+
+  ul
+    overflow-y: auto
+    padding-bottom: 50px
+    height: 100%
+
+.navbar-item
+  white-space: nowrap
+  display: flex
+  justify-content: center
+  padding: 13px 0
+  transition: padding .3s, background .3s, box-shadow .3s
+
+  &.active
+    background: $blue-color
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25)
+
+    &:hover
+      background: $blue-color
+
+      path
+        fill: #fff
+
+    path
+      fill: #fff
+
+    a, .navbar-item-link
+      color: #fff
+
+  &:hover
+    background: #fff
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25)
+
+    path
+      fill: #222
+
+    a, .navbar-item-link
+      color: #222
+
+.navbar-item-link
+  color: #fff
+  text-transform: uppercase
+  font-weight: 700
+
+.navbar-item-ico path
+  fill: #fff
+  transition: fill .3s
+
+.navbar-item__sandwich
+  padding: 20px 0
+  margin-bottom: 40px
+
+.navbar-overlay
+  position: fixed
+  top: 71px
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(9,0,36,0.59)
+  height: 0
+  opacity: 0
+  will-change: opacity
+  transition: opacity .15s linear
+  z-index: 9
+
+  &.open
+    height: auto
+    opacity: 1
+
+.m-menu-btn
+  display: none
+
+.nav-link
+  color: #969696
+  transition: color .2s ease
+
+  &:hover
+    color: #000
+
+  &.active
+    color: #000
+
+@include media-breakpoint-down(md)
+  .navbar
+    width: 0
+
+  .m-menu-btn
+    display: block
+
+    svg path
+      fill: #212121
+
+  .navbar-item__sandwich
+    display: none

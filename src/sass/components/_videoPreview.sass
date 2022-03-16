@@ -1,0 +1,39 @@
+.video-preview
+  overflow: hidden
+  width: 148px
+  height: 83px
+  min-width: 148px
+
+  &.big
+    width: 192px
+    height: 107px
+    min-width: 192px
+
+.ytImgThumbBox
+  position: relative
+  width: 100%
+  height: 100%
+
+.ytImgThumbImg
+  width: 100%
+  height: 100%
+  margin: -9.5% 0 -12%
+
+@media screen and (max-width: 600px)
+  .video-preview,
+  .video-preview.big
+    width: 100%
+    padding-bottom: 55.25%
+    padding-top: 0
+    height: 0
+    position: relative
+    max-width: 600px
+
+    .ytImgThumbImg
+      margin: -9.5% 0 -12%
+      transform: translateY(-2px)
+
+    iframe
+      position: absolute
+      left: 0
+      top: 0
