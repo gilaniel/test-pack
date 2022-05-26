@@ -1,7 +1,10 @@
 {
-  "name": "@zvonko/ui",
+  "name": "kedoo-ts-pack",
   "version": "1.2.0",
-  "private": "true",
+  "description": "kedoo components",
+  "main": "lib/cjs/components/index.js",
+  "module": "lib/esm/components/index.js",
+  "types": "lib/esm/components/index.d.ts",
   "scripts": {
     "build": "rollup -c && yarn theme:tokens",
     "watch": "rollup -c -w",
@@ -13,8 +16,21 @@
     "build:icons:socials:mono": "svgr --icon --title-prop --typescript --out-dir src/icons/socials-mono -- src/icons_src/socials-mono",
     "build:icons:platforms": "svgr --icon --title-prop --typescript --out-dir src/icons/platforms -- src/icons_src/platforms",
     "build:icons:platforms:mono": "svgr --icon --title-prop --typescript --out-dir src/icons/platforms-mono -- src/icons_src/platforms-mono",
-    "build:icons:charts": "svgr --icon --title-prop --typescript --out-dir src/icons/charts -- src/icons_src/charts"
+    "build:icons:charts": "svgr --icon --title-prop --typescript --out-dir src/icons/charts -- src/icons_src/charts",
+    "buildP": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "prepublishOnly": "yarn buildP"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilaniel/test-pack.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/gilaniel/test-pack/issues"
+  },
+  "homepage": "https://github.com/gilaniel/test-pack#readme",
   "devDependencies": {
     "@chakra-ui/cli": "^1.8.1",
     "@chakra-ui/theme-tools": "^1.3.4",
