@@ -2,9 +2,9 @@
   "name": "kedoo-ts-pack",
   "version": "1.2.0",
   "description": "kedoo components",
-  "main": "lib/cjs/components/index.js",
-  "module": "lib/esm/components/index.js",
-  "types": "lib/esm/components/index.d.ts",
+  "main": "lib/cjs/theme/index.js",
+  "module": "lib/esm/theme/index.js",
+  "types": "lib/esm/theme/index.d.ts",
   "scripts": {
     "build": "rollup -c && yarn theme:tokens",
     "watch": "rollup -c -w",
