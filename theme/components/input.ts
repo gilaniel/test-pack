@@ -68,6 +68,14 @@ export default {
             borderColor: "gray.300",
           },
         },
+        _invalid: {
+          borderColor: "red.300",
+          boxShadow: "none",
+          _focus: {
+            borderColor: "red.300",
+            boxShadow: "none",
+          },
+        },
       },
       addon: {
         border: "1px solid",
