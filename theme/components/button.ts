@@ -63,6 +63,7 @@ export default {
   },
   baseStyle: {
     borderRadius: "4px",
+    fontWeight: "medium",
     _disabled: {
       color: "#fff",
       bg: "main.400",

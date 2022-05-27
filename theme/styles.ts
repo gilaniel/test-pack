@@ -6,5 +6,8 @@ export default {
     form: {
       w: "full",
     },
+    a: {
+      boxShadow: "none",
+    },
   }),
 };
