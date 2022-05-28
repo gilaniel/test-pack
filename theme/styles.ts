@@ -8,6 +8,9 @@ export default {
     },
     a: {
       boxShadow: "none",
+      _focus: {
+        boxShadow: "none",
+      },
     },
   }),
 };

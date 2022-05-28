@@ -1,16 +1,17 @@
-import type { SystemStyleObject } from '@chakra-ui/react';
+import type { SystemStyleObject } from "@chakra-ui/react";
 
 export default {
-  parts: ['menu', 'item', 'link'],
+  parts: ["menu", "item", "link"],
   baseStyle: {
     menu: {
-      listStyle: 'none',
+      listStyle: "none",
+      my: 3,
     },
     item: {
-      '& ul': {
+      "& ul": {
         mt: 3,
         ml: 9,
-        '& > li': {
+        "& > li": {
           _notLast: {
             mb: 3,
           },
@@ -18,24 +19,26 @@ export default {
       },
     },
     link: {
-      color: '#23262F',
+      color: "black.100",
       mb: 1,
-      borderRadius: '8px',
-      fontSize: 'body2',
-      fontWeight: 'bold',
-      lineHeight: 'body2',
-      transition: 'background .3s ease-in-out',
+      borderRadius: "8px",
+      fontSize: "sub2",
+      fontWeight: "medium",
+      lineHeight: "sub2",
+      transition: "background .2s ease-in-out",
       _focus: {
-        boxShadow: 'none',
+        boxShadow: "none",
       },
       _hover: {
-        bg: 'rgba(85, 66, 246, 0.1)'
+        bg: "main.100",
+        color: "main.500",
       },
-      '&.active': {
-        bg: 'rgba(85, 66, 246, 0.1)'
+      "&.active": {
+        bg: "main.100",
+        color: "main.500",
       },
-      '& svg > path': {
-        stroke: 'none',
+      "& svg > path": {
+        stroke: "none",
       },
     },
   },
