@@ -76,6 +76,14 @@ export default {
             boxShadow: "none",
           },
         },
+        _valid: {
+          borderColor: "green.300",
+          boxShadow: "none",
+          _focus: {
+            borderColor: "green.300",
+            boxShadow: "none",
+          },
+        },
       },
       addon: {
         border: "1px solid",
