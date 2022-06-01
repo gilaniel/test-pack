@@ -1,4 +1,4 @@
-import { Box, FormLabel, Input, Radio, Text } from "@chakra-ui/react";
+import { Box, FormLabel, Input } from "@chakra-ui/react";
 import React from "react";
 import { CheckBoxProps } from "./CheckBox.types";
 import { CheckStyles, RadioStyles } from "./styles";
