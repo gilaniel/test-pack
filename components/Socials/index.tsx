@@ -1,5 +1,5 @@
-import { Flex, Link } from "@chakra-ui/react";
 import React from "react";
+import { Flex, Link } from "@chakra-ui/react";
 import { Insta, Spotify, Twitter, YT } from "../../icons/socials";
 
 import { SocialsProps } from "./Socials.types";

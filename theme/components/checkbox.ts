@@ -1,42 +1,43 @@
 export default {
   baseStyle: {
     control: {
-      bg: 'white',
-      borderRadius: 'base',
-      borderWidth: '1px',
+      bg: "white",
+      borderRadius: "base",
+      borderWidth: "2px",
+      borderColor: "black.100",
       _checked: {
         _disabled: {
-          bg: 'gray.200',
-          color: 'gray.300',
+          bg: "gray.200",
+          color: "gray.300",
         },
         _readOnly: {
-          bg: 'main.300',
-          borderColor: 'main.300',
+          bg: "main.300",
+          borderColor: "main.300",
         },
       },
       _disabled: {
-        bg: 'gray.200',
+        bg: "gray.200",
       },
       _focus: {
         ring: 0,
       },
       _readOnly: {
-        bg: 'gray.50',
+        bg: "gray.50",
       },
     },
   },
   sizes: {
     md: {
       control: {
-        w: 6,
-        h: 6,
+        w: "18px",
+        h: "18px",
       },
       icon: {
-        fontSize: '0.75rem',
+        fontSize: "0.65rem",
       },
     },
   },
   defaultProps: {
-    colorScheme: 'main',
+    colorScheme: "main",
   },
 };

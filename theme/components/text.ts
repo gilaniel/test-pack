@@ -11,8 +11,8 @@ export default {
       fontWeight: "medium",
     },
     head3: {
-      fontSize: "head3",
-      lineHeight: "head3",
+      fontSize: "head1",
+      lineHeight: "head1",
       fontWeight: "medium",
     },
     head4: {

@@ -15,7 +15,7 @@ import Pagination from "../components/Pagination/Pagination.theme";
 const coreTheme = extendTheme({
   config: {
     cssVarPrefix: "dq",
-    initialColorMode: "dark",
+    initialColorMode: "light",
   },
   styles,
   shadows,

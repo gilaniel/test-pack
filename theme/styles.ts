@@ -1,7 +1,8 @@
 export default {
   global: ({ colorMode }) => ({
     body: {
-      bg: colorMode === "light" ? "main.50" : "gray.900",
+      bg: colorMode === "light" ? "main.50" : "black.200",
+      color: "black.100",
     },
     form: {
       w: "full",
@@ -9,7 +10,7 @@ export default {
     a: {
       boxShadow: "none",
       _focus: {
-        boxShadow: "none",
+        boxShadow: "none!important",
       },
     },
   }),

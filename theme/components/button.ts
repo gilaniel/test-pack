@@ -56,10 +56,28 @@ const ghostVariant: SystemStyleFunction = (props) => {
   };
 };
 
+const noBordVariant: SystemStyleFunction = (props) => {
+  const { colorScheme: c } = props;
+  return {
+    color: `${c}.500`,
+    bg: "transparent",
+    borderColor: `transparent`,
+    borderWidth: "2px",
+    _focus: {
+      ring: 0,
+    },
+    _disabled: {
+      bg: "transparent",
+      borderColor: `transparent`,
+    },
+  };
+};
+
 export default {
   variants: {
     solid: solidVariant,
     ghost: ghostVariant,
+    nobord: noBordVariant,
   },
   baseStyle: {
     borderRadius: "4px",

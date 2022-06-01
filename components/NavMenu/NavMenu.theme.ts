@@ -2,10 +2,10 @@ import type { SystemStyleObject } from "@chakra-ui/react";
 
 export default {
   parts: ["menu", "item", "link"],
-  baseStyle: {
+  baseStyle: ({ colorMode }) => ({
     menu: {
       listStyle: "none",
-      my: 3,
+      mx: 3,
     },
     item: {
       "& ul": {
@@ -19,8 +19,8 @@ export default {
       },
     },
     link: {
-      color: "black.100",
-      mb: 1,
+      color: colorMode === "dark" ? "black.300" : "black.100",
+      mb: "2px",
       borderRadius: "8px",
       fontSize: "sub2",
       fontWeight: "medium",
@@ -30,16 +30,16 @@ export default {
         boxShadow: "none",
       },
       _hover: {
-        bg: "main.100",
-        color: "main.500",
+        bg: colorMode === "dark" ? "gradients.300" : "main.100",
+        color: colorMode === "dark" ? "white" : "main.500",
       },
       "&.active": {
-        bg: "main.100",
-        color: "main.500",
+        bg: colorMode === "dark" ? "gradients.300" : "main.100",
+        color: colorMode === "dark" ? "white" : "main.500",
       },
       "& svg > path": {
         stroke: "none",
       },
     },
-  },
+  }),
 } as SystemStyleObject;

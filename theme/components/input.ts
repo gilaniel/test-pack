@@ -8,9 +8,9 @@ export default {
     md: {
       field: {
         h: 12,
-        px: 0,
+        px: 3,
         py: 0,
-        borderRadius: "4px",
+        borderRadius: "8px",
         fontSize: "14px",
         zIndex: 5,
         background: "white!important",
@@ -19,7 +19,7 @@ export default {
         h: 12,
         px: 0,
         py: 0,
-        borderRadius: "4px",
+        borderRadius: "8px",
         background: "white",
       },
     },
@@ -43,7 +43,7 @@ export default {
       field: {
         border: "1px solid",
         borderColor: "gray.50",
-        color: "gray.500",
+        color: "black.100",
         _placeholder: {
           color: "gray.500",
         },
@@ -58,16 +58,16 @@ export default {
         _disabled: {
           borderColor: "gray.300",
         },
-        _readOnly: {
-          bg: "gray.50",
-          color: "gray.800",
-          _hover: {
-            borderColor: "gray.300",
-          },
-          _focus: {
-            borderColor: "gray.300",
-          },
-        },
+        // _readOnly: {
+        //   bg: "gray.50",
+        //   color: "gray.800",
+        //   _hover: {
+        //     borderColor: "gray.300",
+        //   },
+        //   _focus: {
+        //     borderColor: "gray.300",
+        //   },
+        // },
         _invalid: {
           borderColor: "red.300",
           boxShadow: "none",

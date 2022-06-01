@@ -4,9 +4,10 @@ export default {
   baseStyle: ({ colorMode }) => ({
     position: "fixed",
     left: 0,
-    py: 6,
+    pb: "100px",
     height: "100%",
-    bg: colorMode === "light" ? "main.50" : "gray.900",
+    bg: colorMode === "light" ? "main.50" : "black.200",
     transition: "background .2s ease",
+    overflow: "auto",
   }),
 } as SystemStyleObject;

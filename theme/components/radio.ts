@@ -1,14 +1,23 @@
 export default {
   baseStyle: {
     control: {
-      border: '1px',
+      border: "2px",
+      borderColor: "black.100",
+      transition: "all .25s ease",
       _checked: {
-        bg: 'white',
-        color: 'main.500',
+        bg: "transparent",
+        color: "main.500",
         _before: {
-          w: '45%',
-          h: '45%',
+          w: "10px",
+          h: "10px",
         },
+        _hover: {
+          bg: "transparent",
+        },
+      },
+      _hover: {
+        bg: "transparent",
+        borderColor: "main.500",
       },
       _focus: {
         ring: 0,
@@ -18,12 +27,12 @@ export default {
   sizes: {
     md: {
       control: {
-        w: 6,
-        h: 6,
+        w: "20px",
+        h: "20px",
       },
     },
   },
   defaultProps: {
-    colorScheme: 'main',
+    colorScheme: "main",
   },
 };
