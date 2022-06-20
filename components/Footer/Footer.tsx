@@ -5,8 +5,9 @@ import { useIntl } from "react-intl";
 import footerPages from "../../content/footerPages";
 
 import { Socials } from "../";
+import { FooterProps } from "./Footer.types";
 
-export const Footer = () => {
+export const Footer: React.FC<FooterProps> = () => {
   const { formatMessage } = useIntl();
 
   return (
@@ -14,7 +15,7 @@ export const Footer = () => {
       <List display="flex" fontSize="12px">
         {footerPages.map((item, i) => (
           <ListItem key={i} color="gray.100" mr={6}>
-            <Link>{formatMessage(item)}</Link>
+            <Link href={item.href}>{formatMessage(item)}</Link>
           </ListItem>
         ))}
       </List>
