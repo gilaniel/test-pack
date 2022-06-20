@@ -5,3 +5,4 @@ export { NavMenu, NavMenuItem } from "./NavMenu/NavMenu";
 export { Pagination } from "./Pagination/Pagination";
 export { Socials } from "./Socials";
 export { CheckBox, RadioInp } from "./Inputs";
+export { Footer } from "./Footer/Footer";
