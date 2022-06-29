@@ -35,7 +35,7 @@ export default {
       },
       "&.active": {
         bg: colorMode === "dark" ? "gradients.300" : "main.100",
-        color: colorMode === "dark" ? "white" : "main.500",
+        color: colorMode === "dark" ? "white" : "black.100",
       },
       "& svg > path": {
         stroke: "none",
