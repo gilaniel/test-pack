@@ -19,6 +19,7 @@ export default {
         fontSize: "body2",
         lineHeight: "body2",
         borderRadius: "4px",
+        fontWeight: "normal",
         px: 2,
         py: 1.5,
       },
