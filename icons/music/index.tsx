@@ -1,10 +1,10 @@
 import * as React from "react";
 
-export const Play = ({ color = "#8D92A2" }) => (
+export const Play = ({ color = "#B1B5C3" }) => (
   <svg
-    width="11"
+    width="12"
     height="14"
-    viewBox="0 0 11 14"
+    viewBox="0 0 12 14"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
